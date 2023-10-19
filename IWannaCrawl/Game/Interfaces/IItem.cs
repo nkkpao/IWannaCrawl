@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IWannaCrawl.Game.GameEvents
+namespace IWannaCrawl.Game.Interfaces
 {
-    internal static class GameController
+    internal interface IItem
     {
-        public static void Play()
-        {
-
-        }
+        public string? Name { get; }
+        public int Id { get; }
     }
 }
