@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IWannaCrawl.Game.GameObjects.PlayerClasses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,5 +11,9 @@ namespace IWannaCrawl.Game.Interfaces
     {
         public string? Name { get; }
         public int Id { get; }
+
+        public void Take(Player player)
+        {
+        }
     }
 }

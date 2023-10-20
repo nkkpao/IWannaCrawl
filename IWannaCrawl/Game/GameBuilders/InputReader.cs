@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace IWannaCrawl.Game.GameBuilders
 {
-    internal static class InputReader
+    internal class InputReader
     {
         public static void GetAttackInput(Player p)
         {

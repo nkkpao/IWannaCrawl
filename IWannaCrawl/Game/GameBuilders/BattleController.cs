@@ -14,9 +14,26 @@ namespace IWannaCrawl.Game.GameBuilders
 
         List<Enemy> enemies = new List<Enemy>();
 
+        InputReader reader = new InputReader();
+
         public BattleController(Player p)
         {
             player = p;
+        }
+
+        public void CreateBattle(List<Enemy> e)
+        {
+            enemies = e;
+            Start();
+        }
+
+        protected void Start()
+        {
+            Console.WriteLine("Battle starts");
+            for (int i = 1; i <= player.iCanDo.Count; i++)
+            {
+                Console.WriteLine();
+            }
         }
     }
 }

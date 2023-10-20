@@ -20,9 +20,12 @@ namespace IWannaCrawl.Game.GameObjects.PlayerClasses
             Burning = false;
             Freezed = false;
             Weapon = new IronSword();
-            ICanDo.Add("Attack");
-            ICanDo.Add("Run");
-            ICanDo.Add("Use item");
+            iCanDo = new List<string>
+            {
+                "Attack",
+                "Run",
+                "Use item"
+            };
         }
 
         public override void Attack(IFighter target)
